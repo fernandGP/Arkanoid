@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3f7caedf1193544693810bc370c2d29b\SYNC_RESOURCE-Arkanoid.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\SYNC_RESOURCE-Arkanoid" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8D4A33EE-9E52-37BE-A02E-9C55F0FE5E8E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

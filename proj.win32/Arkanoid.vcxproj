@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EB699CC2-322E-3F6E-9FC2-4846CE893BA6}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>Arkanoid</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\bin\Arkanoid\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Arkanoid.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Arkanoid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\bin\Arkanoid\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Arkanoid.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Arkanoid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\bin\Arkanoid\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Arkanoid.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Arkanoid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\bin\Arkanoid\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Arkanoid.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Arkanoid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\audio\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\extensions;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\editor-support;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\base;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\recast\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\tinyxml2\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxhash\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxtea\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\clipper\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\edtaa3func\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\ConvertUTF\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\poly2tri\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\md5\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\unzip\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\Box2D\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\chipmunk\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include\bullet;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\jpeg\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\openssl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\uv\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\webp\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\websockets\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\curl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\png\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\icon\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\glfw3\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\audio\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\extensions;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\editor-support;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\base;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\recast\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\tinyxml2\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxhash\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxtea\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\clipper\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\edtaa3func\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\ConvertUTF\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\poly2tri\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\md5\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\unzip\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\Box2D\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\chipmunk\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include\bullet;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\jpeg\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\openssl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\uv\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\webp\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\websockets\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\curl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\png\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\icon\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\glfw3\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\audio\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\extensions;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\editor-support;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\base;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\recast\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\tinyxml2\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxhash\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxtea\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\clipper\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\edtaa3func\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\ConvertUTF\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\poly2tri\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\md5\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\unzip\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\Box2D\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\chipmunk\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include\bullet;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\jpeg\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\openssl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\uv\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\webp\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\websockets\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\curl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\png\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\icon\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\glfw3\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/libssl-1_1.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/libcrypto-1_1.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/uv/prebuilt/win32/uv.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/uv.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/websockets/prebuilt/win32/websockets.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/websockets.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/curl/prebuilt/win32/libcurl.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/libcurl.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/glew32.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/iconv.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/libmpg123.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/libogg.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/libvorbis.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/libvorbisfile.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/OpenAL32.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/zlib1.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/Debug/Arkanoid.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Debug/Arkanoid.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\audio\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\extensions;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\editor-support;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\base;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\recast\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\tinyxml2\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxhash\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxtea\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\clipper\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\edtaa3func\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\ConvertUTF\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\poly2tri\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\md5\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\unzip\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\Box2D\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\chipmunk\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include\bullet;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\jpeg\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\openssl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\uv\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\webp\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\websockets\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\curl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\png\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\icon\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\glfw3\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\audio\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\extensions;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\editor-support;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\base;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\recast\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\tinyxml2\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxhash\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxtea\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\clipper\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\edtaa3func\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\ConvertUTF\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\poly2tri\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\md5\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\unzip\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\Box2D\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\chipmunk\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include\bullet;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\jpeg\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\openssl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\uv\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\webp\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\websockets\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\curl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\png\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\icon\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\glfw3\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\audio\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\extensions;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\editor-support;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\base;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\recast\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\tinyxml2\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxhash\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxtea\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\clipper\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\edtaa3func\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\ConvertUTF\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\poly2tri\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\md5\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\unzip\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\Box2D\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\chipmunk\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include\bullet;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\jpeg\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\openssl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\uv\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\webp\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\websockets\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\curl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\png\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\icon\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\glfw3\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/libssl-1_1.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/libcrypto-1_1.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/uv/prebuilt/win32/uv.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/uv.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/websockets/prebuilt/win32/websockets.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/websockets.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/curl/prebuilt/win32/libcurl.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/libcurl.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/glew32.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/iconv.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/libmpg123.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/libogg.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/libvorbis.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/libvorbisfile.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/OpenAL32.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/zlib1.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/Release/Arkanoid.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/Release/Arkanoid.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\audio\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\extensions;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\editor-support;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\base;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\recast\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\tinyxml2\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxhash\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxtea\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\clipper\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\edtaa3func\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\ConvertUTF\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\poly2tri\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\md5\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\unzip\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\Box2D\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\chipmunk\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include\bullet;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\jpeg\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\openssl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\uv\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\webp\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\websockets\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\curl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\png\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\icon\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\glfw3\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\audio\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\extensions;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\editor-support;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\base;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\recast\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\tinyxml2\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxhash\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxtea\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\clipper\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\edtaa3func\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\ConvertUTF\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\poly2tri\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\md5\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\unzip\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\Box2D\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\chipmunk\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include\bullet;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\jpeg\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\openssl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\uv\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\webp\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\websockets\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\curl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\png\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\icon\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\glfw3\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\audio\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\extensions;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\editor-support;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\base;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\recast\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\tinyxml2\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxhash\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxtea\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\clipper\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\edtaa3func\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\ConvertUTF\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\poly2tri\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\md5\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\unzip\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\Box2D\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\chipmunk\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include\bullet;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\jpeg\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\openssl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\uv\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\webp\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\websockets\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\curl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\png\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\icon\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\glfw3\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/libssl-1_1.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/libcrypto-1_1.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/uv/prebuilt/win32/uv.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/uv.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/websockets/prebuilt/win32/websockets.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/websockets.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/curl/prebuilt/win32/libcurl.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/libcurl.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/glew32.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/iconv.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/libmpg123.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/libogg.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/libvorbis.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/libvorbisfile.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/OpenAL32.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/zlib1.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/MinSizeRel/Arkanoid.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/MinSizeRel/Arkanoid.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\audio\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\extensions;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\editor-support;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\base;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\recast\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\tinyxml2\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxhash\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxtea\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\clipper\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\edtaa3func\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\ConvertUTF\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\poly2tri\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\md5\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\unzip\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\Box2D\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\chipmunk\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include\bullet;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\jpeg\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\openssl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\uv\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\webp\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\websockets\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\curl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\png\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\icon\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\glfw3\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\audio\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\extensions;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\editor-support;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\base;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\recast\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\tinyxml2\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxhash\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxtea\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\clipper\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\edtaa3func\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\ConvertUTF\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\poly2tri\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\md5\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\unzip\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\Box2D\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\chipmunk\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include\bullet;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\jpeg\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\openssl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\uv\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\webp\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\websockets\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\curl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\png\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\icon\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\glfw3\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\audio\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\extensions;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\editor-support;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\base;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\platform\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\recast\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\tinyxml2\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxhash\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\xxtea\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\clipper\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\edtaa3func\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\ConvertUTF\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\poly2tri\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\md5\..;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\unzip\.;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\Box2D\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\chipmunk\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\bullet\include\bullet;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\jpeg\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\openssl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\uv\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\webp\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\websockets\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\curl\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\png\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\icon\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\glfw3\include\win32;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/libssl-1_1.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/libcrypto-1_1.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/uv/prebuilt/win32/uv.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/uv.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/websockets/prebuilt/win32/websockets.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/websockets.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/curl/prebuilt/win32/libcurl.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/libcurl.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/glew32.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/iconv.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/libmpg123.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/libogg.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/libvorbis.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/libvorbisfile.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/OpenAL32.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll" "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/zlib1.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/RelWithDebInfo/Arkanoid.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/bin/Arkanoid/RelWithDebInfo/Arkanoid.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Usuario/Desktop/Cocos Projects/Arkanoid" "-BC:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32" --check-stamp-file "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeCCompiler.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeCXXCompiler.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeRCCompiler.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Usuario/Desktop/Cocos Projects/Arkanoid" "-BC:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32" --check-stamp-file "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeCCompiler.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeCXXCompiler.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeRCCompiler.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Usuario/Desktop/Cocos Projects/Arkanoid" "-BC:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32" --check-stamp-file "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeCCompiler.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeCXXCompiler.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeRCCompiler.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Usuario/Desktop/Cocos Projects/Arkanoid" "-BC:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32" --check-stamp-file "C:/Users/Usuario/Desktop/Cocos Projects/Arkanoid/proj.win32/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeCCompiler.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeCXXCompiler.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeRCCompiler.cmake;C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\3.20.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\GameObjects\Background.h" />
+    <ClInclude Include="..\Classes\GameObjects\Ball.h" />
+    <ClInclude Include="..\Classes\GameObjects\Brick.h" />
+    <ClInclude Include="..\Classes\GameObjects\BrickManager.h" />
+    <ClInclude Include="..\Classes\GameObjects\Player.h" />
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\MainScene.h" />
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\main.h" />
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\resource.h" />
+    <ClCompile Include="..\Classes\GameObjects\Background.cpp" />
+    <ClCompile Include="..\Classes\GameObjects\Ball.cpp" />
+    <ClCompile Include="..\Classes\GameObjects\Brick.cpp" />
+    <ClCompile Include="..\Classes\GameObjects\BrickManager.cpp" />
+    <ClCompile Include="..\Classes\GameObjects\Player.cpp" />
+    <ClCompile Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\MainScene.cpp" />
+    <ClCompile Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\main.cpp" />
+    <ResourceCompile Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\game.rc" />
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Resources\CloseNormal.png" />
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Resources\CloseSelected.png" />
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Resources\HelloWorld.png" />
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Resources\fonts\arial.ttf" />
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Resources\res\.gitkeep" />
+    <ClCompile Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{4382F1D8-A67D-3E9D-8B8A-0379760068EE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\SYNC_RESOURCE-Arkanoid.vcxproj">
+      <Project>{9216608E-4B03-3B78-966B-2A23944E8971}</Project>
+      <Name>SYNC_RESOURCE-Arkanoid</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{03D788E1-09AB-34E5-9000-C6CB3946405F}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{B48C393B-0368-3C81-B84E-26BF2E97181F}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{6967327F-68C7-3989-9505-4B85B81F412F}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{4838BB05-74DA-3EDF-A08F-3AAD43ED5FAF}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{2886F568-D958-3D27-B66B-A87D7B1AA216}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{4AB45400-CD4A-3F1E-AD1D-109F7B81C867}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{2F9AED46-3C9F-3D8D-B544-484F3FF3F092}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{BC0720A1-CDEC-3E07-9F13-7895A320214B}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{9B492390-11D5-3A2F-BE3C-E0599E882038}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{E753ADA5-C6D0-3AA7-B6D8-0A5493C6F9ED}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{49E2A931-9F66-300F-97CC-23DEB3D91385}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\engine\external\external.vcxproj">
+      <Project>{77BFDA4A-D3C3-35FE-B5E0-BD8FF74B2FB1}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

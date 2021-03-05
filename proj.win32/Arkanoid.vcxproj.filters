@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\cocos2d\cocos\precheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MainScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\Player.cpp">
+      <Filter>Source Files\Classes\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\Ball.cpp">
+      <Filter>Source Files\Classes\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\Background.cpp">
+      <Filter>Source Files\Classes\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\Brick.cpp">
+      <Filter>Source Files\Classes\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\BrickManager.cpp">
+      <Filter>Source Files\Classes\GameObject</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Resources\fonts\Marker Felt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MainScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\Player.h">
+      <Filter>Source Files\Classes\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\Ball.h">
+      <Filter>Source Files\Classes\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\Background.h">
+      <Filter>Source Files\Classes\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\Brick.h">
+      <Filter>Source Files\Classes\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\BrickManager.h">
+      <Filter>Source Files\Classes\GameObject</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\Usuario\Desktop\Cocos Projects\Arkanoid\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{37835BF0-966D-33E9-AD6C-4D85E09377AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{A5EDA77A-DAD8-399F-936D-3DBD295AC775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{9DB1CC50-BCB6-358D-AE26-83449B94E981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6EDE6E17-4488-3948-94CF-347A83B480F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{308617F9-9985-39B0-85AB-80EEFA51C90B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{BA43ED9B-79DE-3D44-ACB1-F024782C3F53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\GameObject">
+      <UniqueIdentifier>{74e66afc-0541-45d5-baeb-290c678fe0c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
