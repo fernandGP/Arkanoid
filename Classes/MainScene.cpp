@@ -72,6 +72,7 @@ void MainScene::gameWon() {
 void MainScene::gameReset() {
 
     _gameStarted = false;
+
     _ball.MoveTo(_player.getPosition());
     _brickManager.ResetLevel();
 
@@ -182,11 +183,11 @@ bool MainScene::onContactSeparate(cocos2d::PhysicsContact& contact) {
 
     if (collidedBody->getTag() == 10 || collidedBody->getTag() == 12) {
         // conservation of scalar speed
-        auto ballBodyVelocity = ballBody->getVelocity();
+        float xVelocity = (ballBody->getVelocity().x >= 0) ? ballBody->getVelocity().x + 2 : ballBody->getVelocity().x - 2;
+        float yVelocity = (ballBody->getVelocity().y >= 0) ? ballBody->getVelocity().y + 5 : ballBody->getVelocity().y - 6;
+        auto ballBodyVelocity = Vec2(xVelocity, ballBody->getVelocity().y);
         ballBodyVelocity.normalize();
         ballBody->setVelocity(ballBodyVelocity * _ball.getScalarSpeed());
-    
-        // TODO: Conservation of movement dir
 
         if (collidedBody->getTag() == 12) {
             // brick collision subroutine

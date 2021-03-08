@@ -3,7 +3,7 @@
 static std::map<int, int> scores = {
 	{ -2, 0 },
 	{ 1, 10 },
-	{ 2, 15 }
+	{ 2, 5 }
 };
 
 BrickManager:: BrickManager() {}
